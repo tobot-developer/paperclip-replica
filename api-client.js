@@ -1,5 +1,5 @@
 class PaperclipAPI {
-    constructor(baseUrl = 'https://ate-wiring-fairy-prairie.trycloudflare.com') {
+    constructor(baseUrl = 'https://contrast-eat-suspended-scope.trycloudflare.com') {
         this.baseUrl = baseUrl;
     }
 
