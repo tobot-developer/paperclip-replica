@@ -1,5 +1,5 @@
 class PaperclipAPI {
-    constructor(baseUrl = 'https://many-bugs-decide.loca.lt') {
+    constructor(baseUrl = 'https://ate-wiring-fairy-prairie.trycloudflare.com') {
         this.baseUrl = baseUrl;
     }
 
@@ -27,6 +27,10 @@ class PaperclipAPI {
     async getGoals() {
         const data = await this.request('/api/v1/goals');
         return data?.goals || [];
+    }
+    async getTasks() {
+        const data = await this.request('/api/v1/tasks');
+        return data?.tasks || [];
     }
     async startAgent(id) {
         return await this.request(`/api/v1/agents/${id}/action`, {
